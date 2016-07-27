@@ -193,9 +193,9 @@ filecolor=blue,
 	\setcounter{loops}{0}
 	\whiledo {\value{loops} < 1}%
 	{
-		\IfFileExists{Chapter\thechapters/chapter.tex}
+		\IfFileExists{chapter\thechapters/chapter.tex}
 		{\Chapter\thechapters}
-		{\IfFileExists{Chapter\thechapters/chapter\thechapters.tex}
+		{\IfFileExists{chapter\thechapters/chapter\thechapters.tex}
 		{\ChapterS\thechapters}
 		{\setcounter{loops}{1}}}
 		\stepcounter{chapters}
